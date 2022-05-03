@@ -150,7 +150,7 @@ function addList() {
 
 /*--- use rest paramater syntax (ES2015) then reduce ---*/
 // function addList(...nums) {
-//   // nums will be an array containing all arguments 
+   // nums will be an array containing all arguments 
 //   return nums.reduce((sum, num) => sum + num, 0);
 // }
 
