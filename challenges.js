@@ -118,6 +118,7 @@ function addList(...nums){
 }
 
 
+
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
 
@@ -139,7 +140,9 @@ computeRemainder(10.5, 3) //=> 1.5
 // Your solution for 05-computeRemainder:
 
 
-
+function computeRemainder (num1, num2) {
+  return num2 !== 0 ? num1 % num2 : Infinity
+}
 
 
 /*-----------------------------------------------------------------------------
