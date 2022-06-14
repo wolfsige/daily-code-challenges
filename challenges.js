@@ -214,7 +214,12 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-
+function removeEnds(arg){
+  if (arg.length < 3){
+    return ""
+  }
+  return arg.substr(1, arg.length - 2)
+}
 
 
 
