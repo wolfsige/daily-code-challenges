@@ -240,7 +240,23 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 
+function charCount(str) {
+  return str.split('').reduce(function(countObj, char) {
+    // countObj here is what we are counting (prev. value)
+    // [char] is what we are looking at right now (current value). 
+    // we want to compare [char] to countObj.
 
+    countObj[char] = countObj[char] ? ++countObj[char] : 1
+
+    // this function basically says: Hey, we are looking for as many letters that look like T (countObj)
+    // we are going to start with T and now look at o
+    // T = countObj
+    // o = [char]
+    // are they the same? if yes we add to the count. If not we leave it at 1 (the default amount) and move to the next [char].
+
+    return countObj
+  }, {});
+}
 
 
 /*-----------------------------------------------------------------------------

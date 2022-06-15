@@ -326,12 +326,12 @@ function charCount(str) {
 }
 
 /*--- convert str to array and use reduce with a ternary ---*/
-// function charCount(str) {
-//   return str.split('').reduce(function(countObj, char) {
-//     countObj[char] = countObj[char] ? ++countObj[char] : 1;
-//     return countObj;
-//   }, {});
-// }
+function charCount(str) {
+  return str.split('').reduce(function(countObj, char) {
+    countObj[char] = countObj[char] ? ++countObj[char] : 1;
+    return countObj;
+  }, {});
+}
 
 
 /*-----------------------------------------------------------------------------
