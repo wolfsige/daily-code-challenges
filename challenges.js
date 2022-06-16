@@ -282,8 +282,11 @@ formatWithPadding(1234, '*', 3); //=> "1234"
 // Your solution for 10-formatWithPadding here:
 
 
-
-
+function formatWithPadding(num1, str, num2){
+  return num1.toFixed().padStart(num2, str)
+  // toString() is a trap and not the method you want.
+  // toFixed() is what actually makes numbers strings and who ever decided that was a good idea is probably laughing their ass off.
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 11-isPalindrome
