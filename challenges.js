@@ -309,7 +309,14 @@ isPalindrome(''); //=> true
 -----------------------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
 
-
+function isPalindrome(str){
+  str = str.toLowerCase().replace(/ /g, '');
+  if (str === str.split('').reverse().join("")){
+    return true
+  } else {
+    return false
+  }
+}
 
 
 
