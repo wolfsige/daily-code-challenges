@@ -311,6 +311,7 @@ isPalindrome(''); //=> true
 
 function isPalindrome(str){
   str = str.toLowerCase().replace(/ /g, '');
+  // Regular expression...
   if (str === str.split('').reverse().join("")){
     return true
   } else {
