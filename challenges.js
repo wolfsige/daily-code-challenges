@@ -33,9 +33,7 @@ addOne(-5) //=> -4
 -----------------------------------------------------------------------------*/
 // Your solution for 01-addOne here:
 
-function addOne(num) {
-  return num + 1
-}
+
 
 
 
@@ -58,13 +56,7 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-function addTwoNumbers(num1, num2) {
-  if (isNaN(num1) === true || isNaN(num2) === true) {
-    return NaN
-  } else {
-    return num1 + num2
-  }
-}
+
 
 
 
@@ -87,9 +79,7 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-function sumNumbers(arr) {
-  return arr.reduce((sum, num) => sum += num, 0)
-}
+
 
 
 
@@ -113,9 +103,7 @@ add(7,-12) //=> -5
 // Your solution for 04-addList here:
 
 
-function addList(...nums){
-  return nums.reduce((sum, num) => sum += num, 0)
-}
+
 
 
 
@@ -140,9 +128,6 @@ computeRemainder(10.5, 3) //=> 1.5
 // Your solution for 05-computeRemainder:
 
 
-function computeRemainder (num1, num2) {
-  return num2 !== 0 ? num1 % num2 : Infinity
-}
 
 
 /*-----------------------------------------------------------------------------
@@ -164,16 +149,7 @@ range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------------------*/
 // Your solution for 06-range here:
 
-function range(num1, num2) {
-  if (num1 > num2) return 'First argument must be less than second';
-  
-  var range = [];
-  for (var n = num1; n < num2; n++) {
-    range.push(n);
-  }
-  
-  return range;
-}
+
 
 
 /*-----------------------------------------------------------------------------
@@ -191,9 +167,6 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 -----------------------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
 
-function reverseUpcaseString(arg){
-  return arg.split("").reverse().join("").toUpperCase()
-}
 
 
 
@@ -214,9 +187,7 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-function removeEnds(arg){
-  return arg.substr(1, arg.length - 2)
-}
+
 
 
 
@@ -240,23 +211,7 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 
-function charCount(str) {
-  return str.split('').reduce(function(countObj, char) {
-    // countObj here is what we are counting (prev. value)
-    // [char] is what we are looking at right now (current value). 
-    // we want to compare [char] to countObj.
 
-    countObj[char] = countObj[char] ? ++countObj[char] : 1
-
-    // this function basically says: Hey, we are looking for as many letters that look like T (countObj)
-    // we are going to start with T and now look at o
-    // T = countObj
-    // o = [char]
-    // are they the same? if yes we add to the count. If not we leave it at 1 (the default amount) and move to the next [char].
-
-    return countObj
-  }, {});
-}
 
 
 /*-----------------------------------------------------------------------------
@@ -282,11 +237,7 @@ formatWithPadding(1234, '*', 3); //=> "1234"
 // Your solution for 10-formatWithPadding here:
 
 
-function formatWithPadding(num1, str, num2){
-  return num1.toFixed().padStart(num2, str)
-  // toString() is a trap and not the method you want.
-  // toFixed() is what actually makes numbers strings and who ever decided that was a good idea is probably laughing their ass off.
-}
+
 
 /*-----------------------------------------------------------------------------
 Challenge: 11-isPalindrome
@@ -309,15 +260,7 @@ isPalindrome(''); //=> true
 -----------------------------------------------------------------------------*/
 // Your solution for 11-isPalindrome here:
 
-function isPalindrome(str){
-  str = str.toLowerCase().replace(/ /g, '');
-  // Regular expression...
-  if (str === str.split('').reverse().join("")){
-    return true
-  } else {
-    return false
-  }
-}
+
 
 
 
