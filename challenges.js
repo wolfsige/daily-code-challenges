@@ -85,7 +85,9 @@ sumNumbers([]) //=> 0
 // Your solution for 03-sumNumbers here:
 
 
-
+function sumNumbers(arr){
+  return arr.reduce((num1, num2) => num1 + num2, 0)
+}
 
 
 /*-----------------------------------------------------------------------------
