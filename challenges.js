@@ -110,9 +110,13 @@ add(7,-12) //=> -5
 // Your solution for 04-addList here:
 
 
-
-
-
+function addList(){
+  sum = 0
+  for (let i = 0; i < arguments.length; i++) {
+     sum += arguments[i]
+  }
+  return sum
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
