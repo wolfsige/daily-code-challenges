@@ -176,7 +176,6 @@ function range(num1, num2){
   }
   console.log('number 6', array)
   return array
-  
 }
 
 
