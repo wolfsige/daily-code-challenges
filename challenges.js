@@ -174,7 +174,6 @@ function range(num1, num2){
   for (let i = num1; i < num2; i++){
     array.push(i)
   }
-  console.log('number 6', array)
   return array
 }
 
