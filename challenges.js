@@ -214,7 +214,10 @@ removeEnds('a'); //=> "" (empty string)
 // Your solution for 08-removeEnds here:
 
 
-
+function removeEnds(str) {
+    if (str.length < 3) return '';
+    return str.substr(1, str.length - 2);
+  }
 
 
 /*-----------------------------------------------------------------------------
@@ -237,8 +240,12 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 
-
-
+function charCount(str){
+  return str.split('').reduce(function(countLetters, char){
+    countLetters[char] = countLetters[char] ? ++countLetters[char] : 1;
+    return countLetters
+  }, {})
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 10-formatWithPadding
