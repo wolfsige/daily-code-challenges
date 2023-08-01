@@ -33,9 +33,7 @@ addOne(-5) //=> -4
 -----------------------------------------------------------------------------*/
 // Your solution for 01-addOne here:
 
-function addOne(num){
-  return num + 1
-}
+
 
 
 
@@ -59,10 +57,7 @@ addTwoNumbers('Hello', 5) //=> NaN
 // Your solution for 02-addTwoNumbers here:
 
 
-function addTwoNumbers(num1, num2){
-  return isNaN(num1) || isNaN(num2) ? NaN : num1 + num2
-  
-}
+
 
 
 /*-----------------------------------------------------------------------------
@@ -85,9 +80,7 @@ sumNumbers([]) //=> 0
 // Your solution for 03-sumNumbers here:
 
 
-function sumNumbers(arr){
-  return arr.reduce((num1, num2) => num1 + num2, 0)
-}
+
 
 
 /*-----------------------------------------------------------------------------
@@ -110,13 +103,7 @@ add(7,-12) //=> -5
 // Your solution for 04-addList here:
 
 
-function addList(){
-  sum = 0
-  for (let i = 0; i < arguments.length; i++) {
-     sum += arguments[i]
-  }
-  return sum
-}
+
 
 /*-----------------------------------------------------------------------------
 Challenge: 05-computeRemainder
@@ -145,7 +132,7 @@ computeRemainder(10.5, 3) //=> 1.5
 //   return num1 % num2
 // }
 
-const computeRemainder = (num1, num2) => num2 === 0 || num1 === 0 ? Infinity : num1 % num2
+
 
 
 /*-----------------------------------------------------------------------------
@@ -167,15 +154,7 @@ range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------------------*/
 // Your solution for 06-range here:
 
-function range(num1, num2){
-  if (num1 > num2) return "First argument must be less than second";
-  
-  let array = [];
-  for (let i = num1; i < num2; i++){
-    array.push(i)
-  }
-  return array
-}
+
 
 
 /*-----------------------------------------------------------------------------
@@ -193,7 +172,7 @@ reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES"
 -----------------------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
 
-const reverseUpcaseString = (str) => str.toUpperCase().split('').reverse().join('')
+
 
 
 /*-----------------------------------------------------------------------------
@@ -214,10 +193,7 @@ removeEnds('a'); //=> "" (empty string)
 // Your solution for 08-removeEnds here:
 
 
-function removeEnds(str) {
-    if (str.length < 3) return '';
-    return str.substr(1, str.length - 2);
-  }
+
 
 
 /*-----------------------------------------------------------------------------
@@ -240,12 +216,7 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 
-function charCount(str){
-  return str.split('').reduce(function(countLetters, char){
-    countLetters[char] = countLetters[char] ? ++countLetters[char] : 1;
-    return countLetters
-  }, {})
-}
+
 
 /*-----------------------------------------------------------------------------
 Challenge: 10-formatWithPadding
