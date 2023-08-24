@@ -141,15 +141,10 @@ computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
 
-// function computeRemainder(num1, num2){
-//   if (num2 === 0){
-//     return Infinity
-//   }
-//   return num1 % num2
-// }
 
-
-
+const computeRemainder = (num1, num2) => {
+  return num2 === 0 ? Infinity : num1 % num2
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 06-range
