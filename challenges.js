@@ -214,7 +214,9 @@ removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
 
-
+function removeEnds(str){
+  return str.split('').slice(1, -1).join('')
+}
 
 
 
