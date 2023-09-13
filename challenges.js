@@ -240,7 +240,19 @@ charCount('Today is fantastic!') //=> { T: 1, o: 1, d: 1, a: 3, y: 1, ' ': 2, i:
 // Your solution for 09-charCount here:
 
 
+function charCount(str){
+  const count = {}
 
+  str.split('').forEach(arg => {
+    if (count[arg]){
+      count[arg] += 1
+    } else {
+      count[arg] = 1
+    }
+  });
+  
+  return count
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 10-formatWithPadding
