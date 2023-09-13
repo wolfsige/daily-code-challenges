@@ -276,7 +276,9 @@ formatWithPadding(1234, '*', 3); //=> "1234"
 -----------------------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
 
-
+function formatWithPadding(num, str, num2) {
+  return num.toFixed(0).padStart(num2, str)
+}
 
 
 /*-----------------------------------------------------------------------------
